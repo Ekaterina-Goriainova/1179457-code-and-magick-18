@@ -44,7 +44,7 @@ window.renderStatistics = function(ctx, names, times) {
   for (var i = 0; i < names.length; i++) {
     renderText(ctx, Math.round(times[i]), CLOUD_X + BAR_GAP + (BAR_GAP + BAR_WIDTH) * i, BAR_Y - (BAR_HEIGHT * times[i]) / maxTime - GAP);
     renderText(ctx, names[i], CLOUD_X + BAR_GAP + (BAR_GAP + BAR_WIDTH) * i, BAR_Y + 2 * GAP);	
-	var colorBar = (names[i] === 'Вы') ? 'rgba(255, 0, 0, 1)' : 'hsl(230, '+ (100 - i * 20) +'%, 50%)';
+	var colorBar = (names[i] === 'Вы') ? 'rgba(255, 0, 0, 1)' : 'hsl(' + '240' + ',' + Math.floor(Math.random() * 100) + '%' + ',' + '50%' + ')';
 	renderRect(ctx, CLOUD_X + BAR_GAP + (BAR_GAP + BAR_WIDTH) * i, BAR_Y - (BAR_HEIGHT * times[i]) / maxTime, BAR_WIDTH, (BAR_HEIGHT * times[i]) / maxTime, colorBar);
   }	
 };
