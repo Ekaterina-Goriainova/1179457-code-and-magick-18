@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 var firstNames = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
 var lastNames = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
 var coatColors = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
@@ -39,6 +39,7 @@ var renderWizard = function (wizard) {
   return wizardElement;
 };
 
+
 var fragment = document.createDocumentFragment();
 for (var k = 0; k < wizards.length; k++) {
   fragment.appendChild(renderWizard(wizards[k]));
@@ -49,4 +50,3 @@ similarListElement.appendChild(fragment);
 
 document.querySelector('.setup').classList.remove('hidden');
 document.querySelector('.setup-similar').classList.remove('hidden');
-*/
