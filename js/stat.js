@@ -16,7 +16,7 @@ var renderRect = function (ctx, x, y, width, height, color) {
   ctx.fillRect(x, y, width, height);
 };
 
-var renderText = function (ctx, text, x, y, color, font) {
+var renderText = function (ctx, text, x, y) {
   ctx.fillStyle = '#000';
   ctx.font = 'bold 16px PT Mono';
   ctx.fillText(text, x, y);
