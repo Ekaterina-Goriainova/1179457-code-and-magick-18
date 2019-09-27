@@ -23,7 +23,7 @@ var createWizard = function () {
   return wizardItem;
 };
 
-var wizards = []; 
+var wizards = [];
 for (var i = 0; i < 4; i++) {
   wizards.push(createWizard());
 }
