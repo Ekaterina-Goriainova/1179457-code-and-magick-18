@@ -27,7 +27,7 @@ setupOpen.addEventListener('click', function () {
   openPopup();
 });
 
-etupOpen.addEventListener('keydown', function (evt) {
+setupOpen.addEventListener('keydown', function (evt) {
   if (evt.keyCode === ENTER_KEYCODE) {
     openPopup();
   }
@@ -45,7 +45,7 @@ setupClose.addEventListener('keydown', function (evt) {
 
 var userNameInput = setup.querySelector('.setup-user-name');
 
-userNameInput.addEventListener('invalid', function (evt) {
+userNameInput.addEventListener('invalid', function () {
   if (userNameInput.validity.tooShort) {
     userNameInput.setCustomValidity('Имя должно состоять минимум из 2-х символов');
   } else if (userNameInput.validity.tooLong) {
